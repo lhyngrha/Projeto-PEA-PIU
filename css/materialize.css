@@ -2261,6 +2261,7 @@ html {
  */
 body {
   margin: 0;
+  background-image: url("fundo.jpg");
 }
 
 /* HTML5 display definitions
@@ -8180,4 +8181,15 @@ button.picker__today:focus, button.picker__clear:focus, button.picker__close:foc
   .picker--time .picker__box {
     margin-bottom: 5em;
   }
+}
+
+#corpo{
+  width: 240px;
+  height: 900px;
+  background-color:yellow;
+}
+
+#row{
+  width: 240px;
+  height: 900px;
 }
