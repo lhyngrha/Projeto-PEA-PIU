@@ -1,88 +1,115 @@
 <!DOCTYPE html>
 <html>
-    <head>
+   <head>
       <!--Import Google Icon Font-->
       <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
       <!--Import materialize.css-->
       <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
-
       <!--Let browser know website is optimized for mobile-->
       <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
       <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
-
       <title> Adicionar Horário de Estudo </title>
-    </head>
-
-    <body style= "background-image: url('fundo.jpg')">
-	<div class="container" style="width: 450px">
-
-	<nav>
-    <div class="nav-wrapper">
-      <a href="Inicio.html" class="brand-logo">PEA</a>
-      <ul class="right hide-on-med-and-down">
-        <li><a href="ListaDisciplinas.html"><i class="material-icons">toc</i></a></li>
-        <li><a href="Calendario.html"><i class="material-icons">view_week</i></a></li>
-        <li><a href="Grafico.html"><i class="material-icons">trending_up</i></a></li>
-        <li><a href="Opcoes.html"><i class="material-icons">add</i></a></li>
-        <li><a href="Perfil.html"><i class="material-icons">perm_identity</i></a></li>
-      </ul>
-    </div>
-  </nav>
-  <h3> Adicionar Horário de Estudo </h3>
-  <hr><br>
+   </head>
+   <body style= "background-image: url('fundo.jpg')">
+      <div class="container" style="width: 450px">
+      <nav>
+         <div class="nav-wrapper">
+            <a href="Inicio.html" class="brand-logo">PEA</a>
+            <ul class="right hide-on-med-and-down">
+               <li><a href="ListaDisciplinas.html"><i class="material-icons">toc</i></a></li>
+               <li><a href="Calendario.html"><i class="material-icons">view_week</i></a></li>
+               <li><a href="Grafico.html"><i class="material-icons">trending_up</i></a></li>
+               <li><a href="Opcoes.html"><i class="material-icons">add</i></a></li>
+               <li><a href="Perfil.html"><i class="material-icons">perm_identity</i></a></li>
+            </ul>
+         </div>
+      </nav>
+      <h3> Adicionar Horário de Estudo </h3>
+      <hr>
+      <br>
       <div class="row">
-    <form class= "col s12">
-      <div class="row">
-        <form action="#">
-    <div class="input-field col s12">
-    <p>
-      <input type="checkbox" class="filled-in" id="filled-in-box" checked="checked" />
-      <label for="filled-in-box">Segunda-feira</label>
-    </p>
-	<p>
-      <input type="checkbox" class="filled-in" id="filled-in-box" checked="checked" />
-      <label for="filled-in-box">Terça-feira</label>
-    </p>
-	<p>
-      <input type="checkbox" class="filled-in" id="filled-in-box" checked="checked" />
-      <label for="filled-in-box">Quarta-feira</label>
-    </p>
-	<p>
-      <input type="checkbox" class="filled-in" id="filled-in-box" checked="checked" />
-      <label for="filled-in-box">Quinta-feira</label>
-    </p>
-	<p>
-      <input type="checkbox" class="filled-in" id="filled-in-box" checked="checked" />
-      <label for="filled-in-box">Sexta-feira</label>
-    </p>
-	</div>
-    
-  </form>
-
-        <div class="input-field col s12">
-    			<select>
-    			  <option value="" disabled selected>Selecione a disciplina</option>
-    			  <option value="1">PDS</option>
-    			  <option value="2">POS</option>
-    			  <option value="3">Artes</option>
-    			</select>
-			    <label>Disciplina</label>
-		    </div>
-
-  		<div class ="input-field col s12">
-  			 <a id="buscar-button" class="btn-large waves-effect waves-light blue lighten-1" href="ListaDisciplinas.html">Adicionar</a>
-  		</div>
-    </form>
-  </div>
-  </div>
-
+         <form class= "col s12">
+            <div class="row">
+         <form action="#">
+         <div class="input-field col s12">
+         <form action="#">
+         <p>
+         <input type="checkbox" id="test5" />
+         <label for="test5">Segunda</label>
+         </p>
+         <p>
+         <input type="checkbox" id="test4" />
+         <label for="test4">Terça</label>
+         </p>
+         <p>
+         <input type="checkbox" id="test2" />
+         <label for="test2">Quarta</label>
+         </p>
+         <p>
+         <input type="checkbox" id="test6" />
+         <label for="test6">Quinta</label>
+         </p>
+         <p>
+         <input type="checkbox" id="test7" />
+         <label for="test7">Sexta</label>
+         </p>
+         <p>
+         <input type="checkbox" id="test8" />
+         <label for="test8">Sábado</label>
+         </p>
+         <p>
+         <input type="checkbox" id="test9" />
+         <label for="test9">Domingo</label>
+         </p>
+         </form>
+         <br>
+         </div>
+         <br>
+         <br>Repetir toda semana<br><br>
+         <div class="switch">
+         <label>
+         Não
+         <input type="checkbox">
+         <span class="lever"></span>
+         Sim
+         </label>
+         </div><br>
+         <div class="input-field col s12">
+         <label for="disciplina">Data</label>
+         <input placeholder="Data" type="date" class="datepicker">
+         </div>
+         <div class="input-field col s12">
+         <input placeholder="Observações" id="first_name" type="text" class="validate">
+         <label for="disciplina">Horário</label>
+         </div>
+         <br>
+         <div class="input-field col s12">
+         <select>
+         <option value="" disabled selected>Selecione a disciplina</option>
+         <option value="1">PDS</option>
+         <option value="2">POS</option>
+         <option value="3">História</option>
+         </select>
+         <label>Disciplina</label>
+         </div>
+         <div class ="input-field col s12">
+         <a id="buscar-button" class="btn-large waves-effect waves-light blue lighten-1" href="ListaDisciplinas.html">Adicionar</a>
+         </div>
+         </form>
+         </div>
+      </div>
       <!--Import jQuery before materialize.js-->
       <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
       <script type="text/javascript" src="js/materialize.min.js"></script>
-	  <script type="text/javascript">
-	  $(document).ready(function() {
-         $('select').material_select();
-         });
-	  </script>
-    </body>
+      <script type="text/javascript">
+         $(document).ready(function() {
+               $('select').material_select();
+               });
+
+               $('.datepicker').pickadate({
+                  selectMonths: true, // Creates a dropdown to control month
+                  selectYears: 3 // Creates a dropdown of 15 years to control year
+                });
+      </script>
+   </body>
 </html>
