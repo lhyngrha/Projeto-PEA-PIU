@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+    <head>
+      <!--Import Google Icon Font-->
+      <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+      <!--Import materialize.css-->
+      <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
+
+      <!--Let browser know website is optimized for mobile-->
+      <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+      <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+
+      <title> Dia 10/06/2016 </title>
+    </head>
+
+    <body style= "background-image: url('fundo.jpg')">
+	<div class="container" style="width: 450px">
+    	<nav>
+        <div class="nav-wrapper">
+          <a href="Inicio.html" class="brand-logo">PEA</a>
+          <ul class="right hide-on-med-and-down">
+            <li><a href="ListaDisciplinas.html"><i class="material-icons">toc</i></a></li>
+            <li><a href="badges.html"><i class="material-icons">view_week</i></a></li>
+            <li><a href="collapsible.html"><i class="material-icons">trending_up</i></a></li>
+            <li><a href="Opcoes.html"><i class="material-icons">add</i></a></li>
+            <li><a href="Perfil.html"><i class="material-icons">perm_identity</i></a></li>
+          </ul>
+        </div>
+      </nav>
+        <!--Conteúdo AQUI LULULU -->
+        <h3> Dia 10/06/2016 </h3>
+        <hr><br>
+        <ul class="collapsible" data-collapsible="accordion">
+         <li>
+           <div class="collapsible-header"><i class="material-icons">description</i>Provas <a href="AddProva.html"><i class="material-icons right">add</i></a> </div>
+           <div class="collapsible-body"><ul class="collection">
+             <li class="collection-item teal-text text-lighten-2"> <a class="teal-text text-lighten-2" href="#">Banco de Dados - 10/06/2016</a> <a href="#!" class="secondary-content"><i class="material-icons right">delete</i> </a> <a href="EditProva.html" class="secondary-content"><i class="material-icons right">mode_edit</i> </a> </li>
+             <li class="collection-item teal-text text-lighten-2"> <a class="teal-text text-lighten-2" href="#">RUP - 10/06/2016</a> <a href="#!" class="secondary-content"><i class="material-icons right">delete</i> </a> <a href="EditProva.html" class="secondary-content"><i class="material-icons right">mode_edit</i> </a> </li>
+           </ul></div>
+         </li>
+         <li>
+           <div class="collapsible-header"><i class="material-icons">description</i>Trabalhos <a href="AddTrabalho.html"><i class="material-icons right">add</i></a></div>
+           <div class="collapsible-body"><ul class="collection">
+             <li class="collection-item teal-text text-lighten-2"> <a class="teal-text text-lighten-2" href="#">Modelo Iterativo - 10/06/2016</a> <a href="#!" class="secondary-content"><i class="material-icons right">delete</i> </a> <a href="EditTrabalho.html" class="secondary-content"><i class="material-icons right">mode_edit</i> </a> </li>
+             <li class="collection-item teal-text text-lighten-2"> <a class="teal-text text-lighten-2" href="#">RUP - 10/06/2016</a> <a href="#!" class="secondary-content"><i class="material-icons right">delete</i> </a> <a href="EditTrabalho.html" class="secondary-content"><i class="material-icons right">mode_edit</i> </a> </li>
+           </ul></div>
+         </li>
+         <li>
+           <div class="collapsible-header"><i class="material-icons">library_books</i>Horários de Estudo</div>
+           <div class="collapsible-body"><ul class="collection">
+             <li class="collection-item teal-text text-lighten-2"> <a class="teal-text text-lighten-2" href="#">Banco de Dados - 10:00/12:00 - 16/06/2016</a> <a href="#!" class="secondary-content"><i class="material-icons right">delete</i> </a> <a href="#!" class="secondary-content"><i class="material-icons right">mode_edit</i> </a> </li>
+           </ul></div>
+         </li>
+       </ul>
+    </div>
+      <!--Import jQuery before materialize.js-->
+      <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+      <script type="text/javascript" src="js/materialize.min.js"></script>
+	     <script type="text/javascript">
+  	      $(document).ready(function() {
+           $('select').material_select();
+           });
+	      </script>
+    </body>
+</html>
