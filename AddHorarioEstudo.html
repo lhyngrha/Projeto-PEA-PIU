@@ -10,7 +10,7 @@
       <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
       <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
 
-      <title> Editar Disciplina </title>
+      <title> Adicionar Horário de Estudo </title>
     </head>
 
     <body style= "background-image: url('fundo.jpg')">
@@ -28,35 +28,49 @@
       </ul>
     </div>
   </nav>
-  <h3> Editar Disciplina </h3>
+  <h3> Adicionar Horário de Estudo </h3>
   <hr><br>
       <div class="row">
     <form class= "col s12">
       <div class="row">
-        <div class="input-field col s12">
-          <input placeholder="Disciplina" id="first_name" type="text" class="validate">
-          <label for="disciplina">Disciplina</label>
-        </div>
-
-        <div class="input-field col s12">
-          <input placeholder="Professor" id="first_name" type="text" class="validate">
-          <label for="disciplina">Professor</label>
-        </div>
+        <form action="#">
+    <div class="input-field col s12">
+    <p>
+      <input type="checkbox" class="filled-in" id="filled-in-box" checked="checked" />
+      <label for="filled-in-box">Segunda-feira</label>
+    </p>
+	<p>
+      <input type="checkbox" class="filled-in" id="filled-in-box" checked="checked" />
+      <label for="filled-in-box">Terça-feira</label>
+    </p>
+	<p>
+      <input type="checkbox" class="filled-in" id="filled-in-box" checked="checked" />
+      <label for="filled-in-box">Quarta-feira</label>
+    </p>
+	<p>
+      <input type="checkbox" class="filled-in" id="filled-in-box" checked="checked" />
+      <label for="filled-in-box">Quinta-feira</label>
+    </p>
+	<p>
+      <input type="checkbox" class="filled-in" id="filled-in-box" checked="checked" />
+      <label for="filled-in-box">Sexta-feira</label>
+    </p>
+	</div>
+    
+  </form>
 
         <div class="input-field col s12">
     			<select>
-    			  <option value="" disabled selected>Selecione a dificuldade na disciplina</option>
-    			  <option value="1">1</option>
-    			  <option value="2">2</option>
-    			  <option value="3">3</option>
-    			  <option value="4">4</option>
-    			  <option value="5">5</option>
+    			  <option value="" disabled selected>Selecione a disciplina</option>
+    			  <option value="1">PDS</option>
+    			  <option value="2">POS</option>
+    			  <option value="3">Artes</option>
     			</select>
-			    <label>Dificuldade na disciplina</label>
+			    <label>Disciplina</label>
 		    </div>
 
   		<div class ="input-field col s12">
-  			 <a id="buscar-button" class="btn-large waves-effect waves-light blue lighten-1">Adicionar</a>
+  			 <a id="buscar-button" class="btn-large waves-effect waves-light blue lighten-1" href="ListaDisciplinas.html">Adicionar</a>
   		</div>
     </form>
   </div>
