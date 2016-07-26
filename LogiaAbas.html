@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <!--Import Google Icon Font-->
+      <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+      <!--Import materialize.css-->
+      <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
+      <!--Let browser know website is optimized for mobile-->
+      <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+      <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+      <title> Pagina Login </title>
+      <style>
+      /* Style the list */
+          ul.tab {
+              list-style-type: none;
+              margin: 0;
+              padding: 0;
+              overflow: hidden;
+              <!--border: 1px solid #ccc;-->
+              <!--background-color: #f1f1f1;-->
+          }
+
+          /* Float the list items side by side */
+          ul.tab li {float: left;}
+
+          /* Style the links inside the list items */
+          ul.tab li a {
+              display: inline-block;
+              color: black;
+              text-align: center;
+              padding: 14px 16px;
+              text-decoration: none;
+              transition: 0.3s;
+              font-size: 17px;
+          }
+
+          /* Change background color of links on hover */
+          /*.tabizinho ul.tab li a:hover {background-color: #4db6ac;}*/
+
+          /* Create an active/current tablink class */
+          ul.tab li.tabizinho a:focus, .active {background-color:#4db6ac;}
+
+          /* Style the tab content */
+          .tabcontent {
+              display: none;
+              padding: 6px 12px;
+              <!--border: 1px solid #ccc;-->
+              border-top: none;
+          }
+      </style>
+   </head>
+   <body  style= "background-image: url('fundo.jpg')">
+      <div class="container" style="width: 450px">
+         <nav>
+            <div class="nav-wrapper">
+               <a style="padding-left: 10px" href="#!" class="brand-logo">PEA</a>
+               <ul class="right hide-on-med-and-down">
+               </ul>
+            </div>
+         </nav>
+
+         <ul class="tab">
+            <li class="tabizinho"><a href="#" class="tablinks" onclick="openOpcao(event, 'Login')"><h4>Login</h4></a></li>
+            <li class="tabizinho"><a href="#" class="tablinks" onclick="openOpcao(event, 'Cadastro')"><h4>Cadastro</h4></a></li>
+         </ul>
+
+         <div id="Login" class="tabcontent">
+           <form class="col s12">
+                   <div class="col s12">
+                     <div class="input-field col s12">
+                       <input id="email" type="email" class="validate">
+                       <label for="email">Usuario</label>
+                     </div>
+                   </div>
+
+                   <div class="col s12">
+                     <div class="input-field col s12">
+                       <input id="password" type="password" class="validate">
+                       <label for="password">Senha</label>
+                     </div>
+                   </div>
+                   <div class = "col s12">
+                     <a href="Inicio.html" class="waves-effect waves-light btn">Login</a>
+                   </div>
+           </form>
+         </div>
+
+
+         <div id="Cadastrox" class="tabcontent">
+           <form class="col s9">
+             <div class="row">
+               <div class="input-field col s12">
+                 <input id="email" type="email" class="validate">
+                 <label for="email">Usuario</label>
+               </div>
+             </div>
+             <div class="row">
+               <div class="input-field col s12">
+                 <input id="password" type="password" class="validate" length="10">
+                 <label for="password">Senha</label>
+               </div>
+             </div>
+             <div class="row">
+               <div class="input-field col s12">
+                 <input id="password" type="password" class="validate" length="10">
+                 <label for="password">Confirmar Senha</label>
+               </div>
+             </div>
+             <div class="row">
+               <div class="input-field col s12">
+                 <input id="email" type="email" class="validate">
+                 <label for="email">Email</label>
+               </div>
+             </div>
+             <div class ="col s12">
+                 <input type="checkbox" id="test5" />
+                 <label for="test5">Receber email com novidades</label>
+             </div>
+             <div class ="input-field col s12" >
+               <a href="Cadastro.html" class="waves-effect waves-light btn">Cadastrar</a>
+             </div>
+           </form>
+         </div>
+      </div>
+      <!--Import jQuery before materialize.js-->
+      <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+      <script type="text/javascript" src="js/materialize.min.js"></script>
+      <script type="text/javascript">
+      function openOpcao(evt, pagina) {
+          // Declare all variables
+          var i, tabcontent, tablinks;
+
+          // Get all elements with class="tabcontent" and hide them
+          tabcontent = document.getElementsByClassName("tabcontent");
+          for (i = 0; i < tabcontent.length; i++) {
+              tabcontent[i].style.display = "none";
+          }
+
+
+          // Get all elements with class="tablinks" and remove the class "active"
+          tablinks = document.getElementsByClassName("tablinks");
+          for (i = 0; i < tablinks.length; i++) {
+              tablinks[i].className = tablinks[i].className.replace(" active", "");
+          }
+
+          // Show the current tab, and add an "active" class to the link that opened the tab
+          document.getElementById(pagina).style.display = "block";
+          evt.currentTarget.className += " active";
+      }
+      </script>
+   </body>
+</html>

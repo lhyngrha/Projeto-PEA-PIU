@@ -1,6 +1,6 @@
 Login
 	Abas separadas(Botoes de Login e cadastro
-proximo, porém tem funções diferentes, parecido, criando confusao)
+proximo, porém tem funções diferentes, parecido, criando confusao) V
 	
 
 Inicio
@@ -24,8 +24,8 @@ Editar Perfil
 
 Tentar editar mesma pagina de lista
 Icone calendario
-Mais gráficos
+Mais graficos
 NavBar - Tamanhos diferentes
 
-Funcionalidade - Badges
+Funcionalidade - Badges (Gamifica‹o)
 
