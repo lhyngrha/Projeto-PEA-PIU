@@ -1,0 +1,31 @@
+Login
+	Abas separadas(Botoes de Login e cadastro
+proximo, porém tem funções diferentes, parecido, criando confusao)
+	
+
+Inicio
+	
+	Atividades Atrasadas
+	
+	Calendario - Mostrar eventos (tooltip)
+		
+		Barra gigante V
+		Dias Portugues Semana V
+		Destacar dia de Hoje
+		Indisponibilizar dias passados
+
+Adicionar Horarios
+
+	Data X
+
+
+Editar Perfil
+	Sair horrivel
+
+Tentar editar mesma pagina de lista
+Icone calendario
+Mais gráficos
+NavBar - Tamanhos diferentes
+
+Funcionalidade - Badges
+
