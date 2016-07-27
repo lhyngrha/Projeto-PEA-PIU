@@ -38,7 +38,7 @@
           /*.tabizinho ul.tab li a:hover {background-color: #4db6ac;}*/
 
           /* Create an active/current tablink class */
-          ul.tab li.tabizinho a:focus, .active {background-color:#4db6ac;}
+          ul.tab li.tabizinho a:focus, .ativou {background-color:#4db6ac;}
 
           /* Style the tab content */
           .tabcontent {
@@ -49,7 +49,7 @@
           }
       </style>
    </head>
-   <body  style= "background-image: url('fundo.jpg')">
+   <body onload="loading()" style= "background-image: url('fundo.jpg')">
       <div class="container" style="width: 450px">
          <nav>
             <div class="nav-wrapper">
@@ -60,7 +60,7 @@
          </nav>
 
          <ul class="tab">
-            <li class="tabizinho"><a href="#" class="tablinks" onclick="openOpcao(event, 'Login')"><h4>Login</h4></a></li>
+            <li class="tabizinho"><a href="#" class="tablinks ativou" onclick="openOpcao(event, 'Login')"><h4>Login</h4></a></li>
             <li class="tabizinho"><a href="#" class="tablinks" onclick="openOpcao(event, 'Cadastro')"><h4>Cadastro</h4></a></li>
          </ul>
 
@@ -85,8 +85,7 @@
            </form>
          </div>
 
-
-         <div id="Cadastrox" class="tabcontent">
+         <div id="Cadastro" class="tabcontent">
            <form class="col s9">
              <div class="row">
                <div class="input-field col s12">
@@ -126,27 +125,33 @@
       <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
       <script type="text/javascript" src="js/materialize.min.js"></script>
       <script type="text/javascript">
-      function openOpcao(evt, pagina) {
-          // Declare all variables
-          var i, tabcontent, tablinks;
+        function loading()
+        {
+          document.getElementById("Login").style.display = "block";
+          evt.currentTarget.className += " ativou";
 
-          // Get all elements with class="tabcontent" and hide them
-          tabcontent = document.getElementsByClassName("tabcontent");
-          for (i = 0; i < tabcontent.length; i++) {
-              tabcontent[i].style.display = "none";
-          }
+          //ul.tab li.tabizinho a:focus, .active {background-color:#4db6ac;}
+        }
+        function openOpcao(evt, pagina) {
+            // Declare all variables
+            var i, tabcontent, tablinks;
 
+            // Get all elements with class="tabcontent" and hide them
+            tabcontent = document.getElementsByClassName("tabcontent");
+            for (i = 0; i < tabcontent.length; i++) {
+                tabcontent[i].style.display = "none";
+            }
 
-          // Get all elements with class="tablinks" and remove the class "active"
-          tablinks = document.getElementsByClassName("tablinks");
-          for (i = 0; i < tablinks.length; i++) {
-              tablinks[i].className = tablinks[i].className.replace(" active", "");
-          }
+            // Get all elements with class="tablinks" and remove the class "active"
+            tablinks = document.getElementsByClassName("tablinks");
+            for (i = 0; i < tablinks.length; i++) {
+                tablinks[i].className = tablinks[i].className.replace(" ativou", "");
+            }
 
-          // Show the current tab, and add an "active" class to the link that opened the tab
-          document.getElementById(pagina).style.display = "block";
-          evt.currentTarget.className += " active";
-      }
+            // Show the current tab, and add an "active" class to the link that opened the tab
+            document.getElementById(pagina).style.display = "block";
+            evt.currentTarget.className += " ativou";
+        }
       </script>
    </body>
 </html>
