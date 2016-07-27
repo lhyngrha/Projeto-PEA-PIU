@@ -23,7 +23,7 @@ Editar Perfil
 	Sair horrivel
 
 Tentar editar mesma pagina de lista
-Icone calendario
+Icone calendario V
 Mais graficos
 NavBar - Tamanhos diferentes V
 
