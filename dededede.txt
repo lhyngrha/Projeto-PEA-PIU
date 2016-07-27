@@ -1,14 +1,14 @@
 Login
 	Abas separadas(Botoes de Login e cadastro
-proximo, porém tem funções diferentes, parecido, criando confusao) V
-	
+proximo, porï¿½m tem funï¿½ï¿½es diferentes, parecido, criando confusao) V
+
 
 Inicio
-	
+
 	Atividades Atrasadas
-	
+
 	Calendario - Mostrar eventos (tooltip)
-		
+
 		Barra gigante V
 		Dias Portugues Semana V
 		Destacar dia de Hoje
@@ -25,7 +25,6 @@ Editar Perfil
 Tentar editar mesma pagina de lista
 Icone calendario
 Mais graficos
-NavBar - Tamanhos diferentes
+NavBar - Tamanhos diferentes V
 
-Funcionalidade - Badges (Gamifica‹o)
-
+Funcionalidade - Badges (Gamificaï¿½ï¿½o)
