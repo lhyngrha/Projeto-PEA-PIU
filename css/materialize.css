@@ -2998,17 +2998,17 @@ ul.staggered-list li {
   }
 }
 
-@media only screen and (min-width: 600px) and (max-width: 992px) {
+/*@media only screen and (min-width: 600px) and (max-width: 992px) {
   .hide-on-med-only {
     display: none !important;
   }
-}
+}*/
 
-@media only screen and (min-width: 993px) {
+/*@media only screen and (min-width: 993px) {
   .hide-on-large-only {
     display: none !important;
   }
-}
+}*/
 
 @media only screen and (min-width: 993px) {
   .show-on-large {
@@ -4224,6 +4224,7 @@ nav .brand-logo.center {
     -webkit-transform: translateX(-50%);
             transform: translateX(-50%);
   }
+ 
   nav .brand-logo.left, nav .brand-logo.right {
     padding: 0;
     -webkit-transform: none;

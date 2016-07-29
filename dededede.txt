@@ -1,7 +1,5 @@
-Login
-	Abas separadas(Botoes de Login e cadastro
-proximo, por�m tem fun��es diferentes, parecido, criando confusao) V
-
+﻿
+Falta
 
 Inicio
 
@@ -9,8 +7,7 @@ Inicio
 
 	Calendario - Mostrar eventos (tooltip)
 
-		Barra gigante V
-		Dias Portugues Semana V
+		
 		Destacar dia de Hoje
 		Indisponibilizar dias passados
 
@@ -23,8 +20,22 @@ Editar Perfil
 	Sair horrivel
 
 Tentar editar mesma pagina de lista
-Icone calendario V
+
 Mais graficos
-NavBar - Tamanhos diferentes V
 
 Funcionalidade - Badges (Gamifica��o)
+
+__________________________________________________________________________
+Feito:
+
+Login
+	Abas separadas(Botoes de Login e cadastro
+proximo, por�m tem fun��es diferentes, parecido, criando confusao) V
+
+NavBar - Tamanhos diferentes V
+
+Icone calendario V
+
+Barra gigante V
+
+Dias Portugues Semana V
