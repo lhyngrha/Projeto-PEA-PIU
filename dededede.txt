@@ -1,27 +1,14 @@
 ﻿
-Falta
-
-Inicio
-
-	Atividades Atrasadas
+Falta:
 
 	Calendario - Mostrar eventos (tooltip)
-
-		
-		Destacar dia de Hoje
-		Indisponibilizar dias passados
-
-Adicionar Horarios
-
-	Data X
-
 
 Editar Perfil
 	Sair horrivel
 
-Tentar editar mesma pagina de lista
+Tentar editar mesma pagina de lista - VAI DAR NAO
 
-Mais graficos
+Mais graficos - QUAIS?
 
 Funcionalidade - Badges (Gamifica��o)
 
@@ -37,5 +24,7 @@ NavBar - Tamanhos diferentes V
 Icone calendario V
 
 Barra gigante V
+Destacar dia de Hoje
+Indisponibilizar dias passados
 
 Dias Portugues Semana V

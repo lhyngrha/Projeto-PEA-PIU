@@ -17,7 +17,7 @@
               padding: 0;
               overflow: hidden;
               <!--border: 1px solid #ccc;-->
-              <!--background-color: #f1f1f1;-->
+
           }
 
           /* Float the list items side by side */
@@ -25,6 +25,7 @@
 
           /* Style the links inside the list items */
           ul.tab li a {
+              background-color: #4db6ac;
               display: inline-block;
               color: black;
               text-align: center;
@@ -35,10 +36,10 @@
           }
 
           /* Change background color of links on hover */
-          /*.tabizinho ul.tab li a:hover {background-color: #4db6ac;}*/
+          /*ul.tab li.tabizinho a {background-color: #4db6ac;}*/
 
           /* Create an active/current tablink class */
-          ul.tab li.tabizinho a:focus, .ativou {background-color:#4db6ac;}
+          ul.tab li.tabizinho a:focus, .ativou {background-color: transparent !important; border: 1px solid #ccc;}
 
           /* Style the tab content */
           .tabcontent {
@@ -64,8 +65,8 @@
             <li class="tabizinho"><a href="#" class="tablinks" onclick="openOpcao(event, 'Cadastro')"><h4>Cadastro</h4></a></li>
          </ul>
 
-         <div id="Login" class="tabcontent">
-           <form class="col s12">
+         <div id="Login" class="tabcontent" style="border: 1px solid #ccc">
+           <form class="col s12" >
                    <div class="col s12">
                      <div class="input-field col s12">
                        <input id="email" type="email" class="validate">
@@ -85,7 +86,7 @@
            </form>
          </div>
 
-         <div id="Cadastro" class="tabcontent">
+         <div id="Cadastro" class="tabcontent" style="border: 1px solid #ccc">
            <form class="col s9">
              <div class="row">
                <div class="input-field col s12">
@@ -129,7 +130,6 @@
         {
           document.getElementById("Login").style.display = "block";
           evt.currentTarget.className += " ativou";
-
           //ul.tab li.tabizinho a:focus, .active {background-color:#4db6ac;}
         }
         function openOpcao(evt, pagina) {
@@ -146,11 +146,15 @@
             tablinks = document.getElementsByClassName("tablinks");
             for (i = 0; i < tablinks.length; i++) {
                 tablinks[i].className = tablinks[i].className.replace(" ativou", "");
+                //tablinks[i].className = tablinks[i].className.replace(" inativou", "");
             }
 
             // Show the current tab, and add an "active" class to the link that opened the tab
             document.getElementById(pagina).style.display = "block";
             evt.currentTarget.className += " ativou";
+
+            //document.getElementsByClassName(pagina2).className += " inativou";
+
         }
       </script>
    </body>
