@@ -1,7 +1,7 @@
 ﻿
 Falta:
 
-	Calendario - Mostrar eventos (tooltip)
+	Calendario - Mostrar eventos (tooltip) - QUASE
 
 Editar Perfil
 	Sair horrivel
