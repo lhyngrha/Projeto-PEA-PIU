@@ -12,12 +12,12 @@
       <style>
       /* Style the list */
           ul.tab {
+            /*background-color: #4db6ac;*/
               list-style-type: none;
               margin: 0;
               padding: 0;
               overflow: hidden;
               <!--border: 1px solid #ccc;-->
-
           }
 
           /* Float the list items side by side */
@@ -25,7 +25,7 @@
 
           /* Style the links inside the list items */
           ul.tab li a {
-              background-color: #4db6ac;
+              /*background-color: #4db6ac;*/
               display: inline-block;
               color: black;
               text-align: center;
@@ -39,7 +39,11 @@
           /*ul.tab li.tabizinho a {background-color: #4db6ac;}*/
 
           /* Create an active/current tablink class */
-          ul.tab li.tabizinho a:focus, .ativou {background-color: transparent !important; border: 1px solid #ccc;}
+          ul.tab li.tabizinho a:focus, .ativou {
+            background-color: #4db6ac;
+            /*background-color: transparent !important;*/
+            border: 1px solid #ccc;
+          }
 
           /* Style the tab content */
           .tabcontent {
