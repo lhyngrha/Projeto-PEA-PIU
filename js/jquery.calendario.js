@@ -167,9 +167,9 @@
 							content = dayData;
 						}
 
-						if( content !== '' ) {
+						// if( content !== '' ) {
 							inner += '<div>' + content + '</div>';
-						}
+						// }
 
 						++day;
 
@@ -182,8 +182,13 @@
 					 if( content !== '') {
 						cellClasses += 'fc-content';
 					 }
-					 
-					 else{
+
+					// if(content == '<a href="AddHorarioEstudoData.html">+</a>')
+					// {
+					// 	cellClasses += 'fc-free';
+					// }
+
+					else{
 						 cellClasses +='fc-free';
 					 }
 

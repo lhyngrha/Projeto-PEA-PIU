@@ -254,7 +254,7 @@
 
 
 .fc-calendar .fc-row > div.fc-free:after {
-	content: '\00B7';
+	/*content: '\00B7';*/
 	text-align: center;
 	width: 20px;
 	margin-left: -10px;
