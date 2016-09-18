@@ -182,6 +182,10 @@
 					 if( content !== '') {
 						cellClasses += 'fc-content';
 					 }
+					 
+					 else{
+						 cellClasses +='fc-free';
+					 }
 
 					html += cellClasses !== '' ? '<div class="' + cellClasses + '">' : '<div>';
 					html += inner  ;

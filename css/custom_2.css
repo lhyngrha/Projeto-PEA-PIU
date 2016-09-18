@@ -250,6 +250,45 @@
 	color: #fff;
 }
 
+
+
+
+.fc-calendar .fc-row > div.fc-free:after {
+	content: '\00B7';
+	text-align: center;
+	width: 20px;
+	margin-left: -10px;
+	position: absolute;
+	color: transparent;
+	font-size: 70px;
+	line-height: 20px;
+	left: 50%;
+	bottom: 3px;
+}
+
+.fc-calendar .fc-row > div.fc-today.fc-free:after {
+	color: #b02c42;
+}
+
+.fc-calendar .fc-row > div.fc-free:hover:after{
+	color: #ef4f69;
+}
+
+.fc-calendar .fc-row > div.fc-today.fc-free:hover:after{
+	color: #fff;
+}
+
+
+
+
+
+
+
+
+
+
+
+
 .fc-calendar .fc-row > div > div a,
 .fc-calendar .fc-row > div > div span {
 	display: none;
