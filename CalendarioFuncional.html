@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <!--Import Google Icon Font-->
+      <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+      <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+      <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+      <title> Calendário </title>
+      <link rel="stylesheet" type="text/css" href="css/calendar.css" />
+      <link rel="stylesheet" type="text/css" href="css/custom_2.css" />
+      <script src="js/modernizr.custom.63321.js"></script>
+   </head>
+   <body style= "background-image: url('fundo.jpg')">
+      <div class="container" style="width: 450px">
+         <nav>
+            <div class="nav-wrapper">
+               <a style="padding-left: 10px" href="Inicio.html" class="">PEA</a>
+               <ul class="right">
+                  <li><a href="ListaDisciplinas.html"><i class="material-icons">toc</i></a></li>
+                  <li><a href="Calendario.html"><i class="material-icons">today</i></a></li>
+                  <li><a href="Grafico.html"><i class="material-icons">trending_up</i></a></li>
+                  <li><a href="AddHorarioEstudo.html"><i class="material-icons">add</i></a></li>
+                  <li><a href="Perfil.html"><i class="material-icons">perm_identity</i></a></li>
+               </ul>
+            </div>
+         </nav>
+         <h5> Calendário </h5>
+         <hr>
+
+         <div class="container">
+            <section class="main">
+               <div class="custom-calendar-wrap" style="width:450px; margin-left:-30px;">
+                  <div id="custom-inner" class="custom-inner">
+
+                     <div class="custom-header clearfix">
+                        <div class="nav-calendar">
+                           <span id="custom-prev" class="custom-prev"></span>
+                           <span id="custom-next" class="custom-next"></span>
+                        </div>
+                        <h2 id="custom-month" class="custom-month"></h2>
+                        <h3 id="custom-year" class="custom-year"></h3>
+                     </div>
+
+                     <div id="calendar" class="fc-calendar-container"></div>
+                  </div>
+               </div>
+            </section>
+         </div>
+
+      </div>
+      </div>
+      <!--Import jQuery before materialize.js-->
+      <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+      <script type="text/javascript" src="js/materialize.min.js"></script>
+      <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+      <script type="text/javascript" src="js/jquery.calendario.js"></script>
+      <script type="text/javascript" src="js/data.js"></script>
+      <script type="text/javascript">
+         $(function() {
+
+         	var transEndEventNames = {
+         			'WebkitTransition' : 'webkitTransitionEnd',
+         			'MozTransition' : 'transitionend',
+         			'OTransition' : 'oTransitionEnd',
+         			'msTransition' : 'MSTransitionEnd',
+         			'transition' : 'transitionend'
+         		},
+         		transEndEventName = transEndEventNames[ Modernizr.prefixed( 'transition' ) ],
+         		$wrapper = $( '#custom-inner' ),
+         		$calendar = $( '#calendar' ),
+         		cal = $calendar.calendario( {
+         			onDayClick : function( $el, $contentEl, dateProperties ) {
+
+         				if( $contentEl.length > 0 ) {
+         					showEvents( $contentEl, dateProperties );
+         				}
+
+         			},
+         			caldata : codropsEvents,
+         			displayWeekAbbr : true
+         		} ),
+         		$month = $( '#custom-month' ).html( cal.getMonthName() ),
+         		$year = $( '#custom-year' ).html( cal.getYear() );
+
+         	$( '#custom-next' ).on( 'click', function() {
+         		cal.gotoNextMonth( updateMonthYear );
+         	} );
+         	$( '#custom-prev' ).on( 'click', function() {
+         		cal.gotoPreviousMonth( updateMonthYear );
+         	} );
+
+         	function updateMonthYear() {
+         		$month.html( cal.getMonthName() );
+         		$year.html( cal.getYear() );
+         	}
+
+         	// just an example..
+         	function showEvents( $contentEl, dateProperties ) {
+
+         		hideEvents();
+
+         		var $events = $( '<div id="custom-content-reveal" class="custom-content-reveal"><h4>Eventos em ' + dateProperties.day + ' de ' + dateProperties.monthname + ' de ' + dateProperties.year + '</h4></div>' ),
+         			$close = $( '<span class="custom-content-close"></span>' ).on( 'click', hideEvents );
+
+         		$events.append( $contentEl.html() , $close ).insertAfter( $wrapper );
+
+         		setTimeout( function() {
+         			$events.css( 'top', '0%' );
+         		}, 25 );
+
+         	}
+
+          function hideEvents() {
+
+         		var $events = $( '#custom-content-reveal' );
+         		if( $events.length > 0 ) {
+
+         			$events.css( 'top', '100%' );
+         			Modernizr.csstransitions ? $events.on( transEndEventName, function() { $( this ).remove(); } ) : $events.remove();
+         		}
+         	}
+         });
+      </script>
+   </body>
+</html>
