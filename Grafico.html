@@ -20,7 +20,7 @@
           <a style="padding-left: 10px" href="Inicio.html" class="">PEA</a>
           <ul class="right">
             <li><a href="ListaDisciplinas.html"><i class="material-icons">toc</i></a></li>
-            <li><a href="Calendario.html"><i class="material-icons">today</i></a></li>
+            <li><a href="CalendarioFuncional.html"><i class="material-icons">today</i></a></li>
             <li><a href="Grafico.html"><i class="material-icons">trending_up</i></a></li>
             <li><a href="AddHorarioEstudo.html"><i class="material-icons">add</i></a></li>
             <li><a href="Perfil.html"><i class="material-icons">perm_identity</i></a></li>
@@ -30,18 +30,29 @@
         <!--Conteúdo AQUI LULULU -->
         <h5> Gráficos  </h5>
         <hr><br>
+
+        <div class="input-field col s12">
+    			<select>
+    			  <option value="" disabled selected>Selecione o período de exibição de dados</option>
+    			  <option value="1">Desde o começo dos tempos</option>
+    			  <option value="2">Último ano</option>
+    			  <option value="3">Últimos seis meses</option>
+            <option value="4">Últimos três meses</option>
+    			  <option value="4">Últimos dois meses</option>
+    			  <option value="4">Último mês</option>
+            <option value="4">Última semana</option>
+    			</select>
+			    <label>Filtrar dados</label>
+		    </div>
+
+
         <div id="container" style="min-width: 310px; height: 400px; max-width: 600px; margin: 0 auto"></div>
     </div>
-</script>
       <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
       <script type="text/javascript" src="js/materialize.min.js"></script>
-
-
-	  <script src="https://code.highcharts.com/highcharts.js"></script>
-	  <script src="https://code.highcharts.com/modules/exporting.js"></script>
-
-
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/1.0.2/Chart.min.js"></script>
+	    <script src="https://code.highcharts.com/highcharts.js"></script>
+	    <script src="https://code.highcharts.com/modules/exporting.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/1.0.2/Chart.min.js"></script>
 	    <script type="text/javascript">
 		$(function () {
 		$(document).ready(function () {
